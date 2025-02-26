@@ -1,16 +1,27 @@
 @font-face {
-    font-family: 'Figtree';
-    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+  font-family: "Figtree";
+  src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
 }
 
 :root {
-    --yellow: hsl(47, 88%, 63%);
-    --gray-950: hsl(0, 0%, 7%);
-    --gray-500: hsl(0, 0%, 42%);
-    --white: hsl(0, 0%, 100%);
+  --yellow: hsl(47, 88%, 63%);
+  --gray-950: hsl(0, 0%, 7%);
+  --gray-500: hsl(0, 0%, 42%);
+  --white: hsl(0, 0%, 100%);
 
-    --spacing-300: 1.5rem; /* 24px */
-    --spacing-150: 0.75rem; /* 12px */
-    --spacing-100: 0.5rem; /* 8px */
-    --spacing-50: 0.25rem; /* 4px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-150: 0.75rem; /* 12px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-50: 0.25rem; /* 4px */
+}
+
+/* --- # ATTRIBUTION --- */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
