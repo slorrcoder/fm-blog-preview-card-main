@@ -15,13 +15,112 @@
   --spacing-50: 0.25rem; /* 4px */
 }
 
+/* --- # GENERAL --- */
+
+body {
+  min-height: 100vh;
+  color: var(--gray-950);
+  background-color: var(--yellow);
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- # CARD --- */
+
+.card {
+  max-width: 384px;
+  margin: var(--spacing-150);
+  padding: var(--spacing-300);
+  background-color: var(--white);
+  border: 1px solid var(--gray-950);
+  border-radius: 1.25rem;
+  box-shadow: 8px 8px 0 0;
+}
+
+.card__img {
+  height: 200px;
+  border-radius: 0.625rem;
+  object-fit: cover;
+}
+
+.card__content,
+.card__author {
+  margin-top: var(--spacing-300);
+}
+
+.card__category,
+.card__author-name {
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.card__category {
+  background-color: var(--yellow);
+  border-radius: 0.25rem;
+  display: inline-block;
+  padding: var(--spacing-50) var(--spacing-150);
+}
+
+.card__pub-date {
+  margin-top: var(--spacing-150);
+  font-size: 0.875rem;
+}
+
+.card__content h1 {
+  margin-top: var(--spacing-150);
+}
+
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.5;
+  transition: 0.15s;
+}
+
+.card__title:hover,
+.card__title:focus {
+  cursor: pointer;
+  color: var(--yellow);
+}
+
+.card__desc {
+  color: var(--gray-500);
+  margin-top: var(--spacing-150);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-150);
+}
+
+.card__author-img {
+  width: 32px;
+  height: 32px;
+}
+
 /* --- # ATTRIBUTION --- */
 
 .attribution {
-  font-size: 11px;
+  color: var(--gray-500);
+  margin: var(--spacing-300) var(--spacing-150);
+  font-size: 0.688rem;
   text-align: center;
+  line-height: 1.5;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--gray-950);
+}
+
+.attribution a:hover,
+.attribution a:focus {
+  text-decoration: underline;
 }
